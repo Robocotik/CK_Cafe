@@ -1,7 +1,157 @@
-.wrapper{
-
+:root {
+  --color-green-main: #6b8e23;
+  --color-gray-main: #555555;
+  --color-gray-sub: #eeeeee;
+  --color-black-main: #000000;
+  --color-white-main: #f9f9f9;
+  --text-2xl: 24px;
+  --text-xl: 20px;
+  --text-lg: 18px;
+  --text-base: 16px;
 }
 
-.sidebar{
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
 
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+#header h1 {
+  margin: auto; /* Убрали кавычки */
+  font-size: var(--text-2xl);
+  margin-bottom: 5px;
+}
+
+#header p {
+  font-size: var(--text-lg);
+}
+
+#header {
+  & h1 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+  }
+
+  & p {
+    font-size: var(--text-lg);
+  }
+  padding: 20px;
+  color: var(--color-white-main);
+  text-align: center;
+  background-color: var(--color-green-main);
+}
+
+.block {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.list__title {
+  font-size: var(--text-xl);
+  color: var(--color-black-main);
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.list__description {
+  margin-bottom: 10px;
+}
+
+#about {
+  & p {
+    margin-bottom: 18px;
+  }
+  background-color: var(--color-gray-sub);
+  width: 280px;
+  margin-block: auto;
+}
+
+#wrapper {
+  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#content {
+  width: 400px;
+  height: 600px;
+  margin-left: 20px;
+  margin-right: 225px;
+  padding: 0;
+}
+
+#sidebar {
+  background-color: var(--color-gray-sub);
+  height: min-content;
+  padding: 15px;
+}
+
+#main {
+  padding: 20px;
+  display: block;
+}
+
+#footer {
+  text-align: center;
+  background-color: var(--color-green-main);
+  font-size: var(--text-base);
+  padding-block: 10px;
+  color: var(--color-white-main);
+}
+
+/* #test { */
+/* } */
+
+.card {
+  display: inline-flex;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  & img {
+    margin-right: 16px;
+  }
+}
+
+.card__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.card__description {
+  font-size: var(--text-base);
+  color: var(--color-gray-main);
+}
+
+.card__price {
+  font-size: var(--text-base);
+  margin-block: 5px;
+  color: var(--color-gray-main);
+}
+
+span {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+.d-block {
+  display: block;
 }

@@ -14,57 +14,113 @@
 2) если это ход, чтобы сыграть на контрасте и показать, что можно иначе (tailwind, bootstrap), то идея так себе ибо долгое вступление выходит
 3) особенно перебор с конкретными свойствами css классов
 4) ограничение на flex и grid вообще вводит в ступор, зачем? Зачем делать заведемо ужасно, если человек в теории может хорошо?
+5) ждем bootstrap / tailwind в следуюзих модулях, а не вот это вот ...
 -->
+<style>
+    #wrapper {
+        background-color: '#ff0000';
+    }
+</style>
 
 <body>
     <div id='wrapper'>
         <header id='header'>
             <h1>
-                Уютное кафе
+                Кафе "Уютное Место"
             </h1>
             <p>
-                Описание для кафе
+                Лучшее место для ваших встреч и отдыха
             </p>
         </header>
         <main id='main'>
-            <div id='content'>
-                <h2>Карточки</h2>
+            <div id='about' class='block'>
+                <p class='title'>
+                    О нас
+                </p>
+                <p>
+                    Кафе "Уютное Место" – это идеальное место для встречи с друзьями, семейных ужинов и романтических
+                    вечеров. Мы предлагаем
+                    широкий ассортимент блюд и напитков на любой вкус.
+                </p>
+            </div>
+            <div id='content' class='block'>
 
+                <h2 id='test' class='title'>Карточки</h2>
 
                 <div class='card'>
-                    <h3>Позиция 1</h3>
-                    <img src="" alt="">
-                    <p>Состав: </p>
-                    <ul>
-                        <li>
-                            Сметана
-                        </li>
-                        <li>
-                            Лук
-                        </li>
-                        <li>
-                            Укроп
-                        </li>
-                    </ul>
+                    <img src="./../source/icons/1.png" alt="card_img_1">
+                    <div>
+                        <h3 class='card__title'>Салат "Цезарь"</h3>
+                        <p class='card__price'>350 ₽</p>
+                        <p class='card__description'>Классический салат с курицей, листом салата, пармезаном и
+                            сухариками.</p>
+                    </div>
                 </div>
 
 
+                <div class='card'>
+                    <img src="./../source/icons/2.png" alt="card_img_2">
+                    <div>
+                        <h3 class='card__title'>Салат "Цезарь"</h3>
+                        <p class='card__price'>350 ₽</p>
+                        <p class='card__description'>Классический салат с курицей, листом салата, пармезаном и
+                            сухариками.</p>
+                    </div>
+                </div>
+
+
+                <div class='card'>
+                    <img src="./../source/icons/3.png" alt="card_img_3">
+                    <div>
+                        <h3 class='card__title'>Салат "Цезарь"</h3>
+                        <p class='card__price'>350 ₽</p>
+                        <p class='card__description'>Классический салат с курицей, листом салата, пармезаном и
+                            сухариками.</p>
+                    </div>
+                </div>
+
+                <div class='card'>
+                    <img src="./../source/icons/4.png" alt="card_img_3">
+                    <div>
+                        <h3 class='card__title'>Салат "Цезарь"</h3>
+                        <p class='card__price'>350 ₽</p>
+                        <p class='card__description'>Классический салат с курицей, листом салата, пармезаном и
+                            сухариками.</p>
+                    </div>
+                </div>
             </div>
-            <div id='about'>
-                <p>
-                    О нас
-                </p>
-            </div>
-            <div id='sidebar'>
-                <h2>
-                    О кафе
-                </h2>
-                <p>Адрес: <span>Москва</span></p>
-                <p>Телефон: <span>+7 (965) 418 22 56</span></p>
+            <div id='sidebar' class='block'>
+
+                <ul class='list'>
+                    <li>
+                        <h2 class='list__title'>
+                            Контакты
+                        </h2>
+                        <p class='list__description'><span>Адрес: </span>Москва</p>
+                        <p class='list__description'> <span>Телефон: </span>+7 (965) 418-22-56</p>
+
+                    </li>
+                    <li>
+                        <h2 class='list__title'>
+                            График работы
+                        </h2>
+                        <p class='list__description'>Понедельник - Пятница: 9:00 - 22:00</p>
+                        <p class='list__description'>Суббота: 10:00 - 23:00</p>
+                        <p class='list__description'>Воскресенье: 10:00 - 21:00</p>
+                    </li>
+                    <li>
+                        <h2 class='list__title'>
+                            Социальные сети
+                        </h2>
+                        <a href="/" class='list__description d-block'>ВКонтакте</a>
+                        <a href="/" class='list__description d-block'>Telegram</a>
+                        <a href="/" class='list__description d-block'>Я. Карты</a>
+                    </li>
+                </ul>
             </div>
         </main>
         <footer id='footer'>
-            Копирайт
+            © 2024 Кафе "Уютное Место". Все права защищены.
         </footer>
     </div>
 
